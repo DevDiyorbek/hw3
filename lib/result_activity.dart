@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 class ResultActivity extends StatelessWidget {
   final String variableValue;
-
-  // Constructor to receive the variable value
   const ResultActivity(this.variableValue, {super.key});
 
   @override

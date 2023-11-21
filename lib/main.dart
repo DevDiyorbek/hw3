@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'second_screen.dart';
+import 'package:hw3/start.dart';
 
 void main() {
   runApp(MyApp());
@@ -63,10 +63,12 @@ class MyApp extends StatelessWidget {
                             ElevatedButton(
                               onPressed: () {
                                 enteredText = _textController.text;
+
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => SecondScreen(enteredText)),
+                                    builder: (context) => Start(userName: enteredText),
+                                  ),
                                 );
                               },
                               style: ElevatedButton.styleFrom(

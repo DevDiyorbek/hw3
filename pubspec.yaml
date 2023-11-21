@@ -68,6 +68,7 @@ flutter:
     - images/ic_flag_of_belgium.png
     - images/ic_flag_of_brazil.png
     - images/ic_trophy.png
+    - images/welcome.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

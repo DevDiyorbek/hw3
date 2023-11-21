@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:hw3/third_screen.dart';
 
 class SecondScreen extends StatelessWidget {
 
-  String enteredText = " ";
-  SecondScreen(this.enteredText, {super.key});
+  const SecondScreen({super.key,});
 
   @override
   Widget build(BuildContext context) {
-
-
-    // int correctAnswers = 0;
-
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
@@ -19,13 +15,13 @@ class SecondScreen extends StatelessWidget {
           body: Builder(
             builder: (BuildContext context) {
               return Center(
-
                   child:Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       const Text(
-                        "Name of a user: enteredText",
-                        style: TextStyle(fontSize: 30),
+                        "What Country does this flag belong to",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(fontSize: 26),
                       ),
                       const SizedBox(height: 30,),
 
@@ -79,13 +75,12 @@ class SecondScreen extends StatelessWidget {
                             const SizedBox(height: 30,),
                             ElevatedButton(
                               onPressed: () {
-                                // Navigate to the second screen and pass the variable
-                                // Navigator.push(
-                                //   context,
-                                //   MaterialPageRoute(
-                                //     builder: (context) => SecondScreen(),
-                                //   ),
-                                // );
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const ThirdScreen(),
+                                  ),
+                                );
                               },
                               style: ElevatedButton.styleFrom(
                                   fixedSize: const Size(double.maxFinite,0),
